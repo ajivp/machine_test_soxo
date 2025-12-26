@@ -1,0 +1,18 @@
+<!-- layout.component.html -->
+<mat-sidenav-container class="layout">
+
+  <mat-sidenav mode="side" opened>
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-navbar></app-navbar>
+
+    <!-- 🔥 THIS renders dashboard/users -->
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

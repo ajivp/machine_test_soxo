@@ -1,0 +1,61 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;              /* ✅ FIXED */
+  top: 64px;                    /* height of navbar */
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 64px);   /* full height minus navbar */
+  padding-top: 16px;
+
+  background: #0f172a;          /* 🔥 dark blue */
+  overflow-y: auto;
+}
+
+.main-content {
+  margin-left: 260px;     /* same as sidebar width */
+  margin-top: 64px;       /* navbar height */
+  padding: 20px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;        /* ✅ vertical alignment */
+  gap: 14px;                  /* ✅ spacing between icon & text */
+
+  height: 48px;
+  padding: 0 16px;
+  margin: 6px 12px;
+
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.sidebar a.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.sidebar .menu-text {
+  color: #e5e7eb;             /* ✅ font color */
+  display: flex;
+  align-items: center;        /* ✅ text vertical alignment */
+  line-height: 1;
+  white-space: nowrap;
+}
+
+
+ .menu-icon {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;             /* ✅ prevents icon resizing */
+  color: #9ca3af;
+}

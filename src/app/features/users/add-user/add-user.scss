@@ -1,0 +1,40 @@
+.add-user {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #1f2937;
+  border-radius: 12px;
+  color: #e5e7eb;
+}
+.add-user h2 {
+  color: #ffffff;
+}
+
+.add-user mat-label {
+  color: #cbd5f5;
+}
+
+.add-user input {
+  color: #ffffff;
+}
+
+.add-user mat-error {
+  color: #f87171;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.full-width {
+  width: 100%;
+  color: #fff;
+
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}

@@ -1,0 +1,37 @@
+.layout {
+  height: 100vh;
+  background: #f3f4f6;
+}
+
+/* Ensure sidenav matches sidebar */
+mat-sidenav {
+  width: 240px;
+  background: #111827;
+  color: #e5e7eb;
+  border-right: none;
+  border-radius: 0; 
+}
+
+/* Main content area */
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page content */
+.content {
+  padding: 24px;
+  background: #f9fafb;
+  min-height: calc(100vh - 64px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  mat-sidenav {
+    width: 200px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+}
